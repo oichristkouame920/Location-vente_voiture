@@ -1,0 +1,428 @@
+.border-primary
+{
+   background-color: gold;
+}
+nav
+{
+   background-color:darkblue;
+   color: white;
+   height: 100px;
+   font-size: 20px;
+}
+marquee
+{
+   font-style: oblique; font-size: 30px;font-weight: 700;
+}
+body
+{
+   background-color: aliceblue;
+}
+.sal /*pour le texte devant les images de couveurture*/
+{
+   margin-top: auto; margin-bottom: auto; font-family: 'Times New Roman', Times, serif;
+}
+a
+{
+   text-decoration: none;
+}
+.col-mb-4  /*pour les images de couveurture*/
+{
+   width: 30%;
+   display: flex;
+   flex-direction: column;
+} 
+.col-mb-6 /*pour la colone dee texte devant les images de couveurture*/
+{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+} 
+#je1:hover /*pour l'apparence dynamique de l'image 1*/
+{
+   transform: scale(1.1); 
+   transition-duration: 0.5s;
+   
+}
+#je1
+{
+   justify-content: center; height: 400px; width: 500px;
+}
+#je2:hover /*pour l'apparence dynamique de l'image 2*/
+{
+   transform: scale(1.1); 
+   transition-duration: 0.5s;
+}
+#je2
+{
+   justify-content: center; height: 400px; width: 500px;
+}
+#je3:hover /*pour l'apparence dynamique de l'image 3*/
+{
+   transform: scale(1.1); 
+   transition-duration: 0.5s;
+}
+#je3
+{
+   justify-content: center; height: 400px; width: 500px;
+}
+#je4:hover /*pour l'apparence dynamique de l'image 4*/
+{
+   transform: scale(1.1); 
+   transition-duration: 0.5s;
+}
+#je4
+{
+   justify-content: center; height: 400px; width: 500px;
+}
+#je5:hover /*pour l'apparence dynamique de l'image 4*/
+{
+   transform: scale(1.1); 
+   transition-duration: 0.5s;
+}
+#je5
+{
+   justify-content: center; height: 400px; width: 500px;
+}
+#je6:hover /*pour l'apparence dynamique de l'image 4*/
+{
+   transform: scale(1.1); 
+   transition-duration: 0.5s;
+}
+#je6
+{
+   justify-content: center; height: 400px; width: 500px;
+}
+#je7:hover /*pour l'apparence dynamique de l'image 4*/
+{
+   transform: scale(1.1); 
+   transition-duration: 0.5s;
+}
+#je7
+{
+   justify-content: center; height: 400px; width: 500px;
+}
+#je8:hover /*pour l'apparence dynamique de l'image 4*/
+{
+   transform: scale(1.1); 
+   transition-duration: 0.5s;
+}
+#je8
+{
+   justify-content: center; height: 400px; width: 500px;
+}
+#je9:hover /*pour l'apparence dynamique de l'image 4*/
+{
+   transform: scale(1.1); 
+   transition-duration: 0.5s;
+}
+#je9
+{
+   justify-content: center; height: 400px; width: 500px;
+}
+.nsp    /*Pour les tete de liste dans le footerr*/
+{
+   text-decoration:underline;
+   text-transform: uppercase;
+   font-size: 15px;
+}
+footer
+{
+   background-color: darkblue;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: white;
+   font-size:large;
+}
+footer img
+{
+   width: 35px;
+   height: 35px;
+}
+ul /*La liste dans la barre de navigation*/
+{
+   column-gap: 5px;
+}
+h5{
+   text-align: center; text-decoration: underline;
+}
+.logo
+{
+   font-family: Arial, sans-serif;
+   font-size: 32px;
+   font-weight: bold;
+   color: #1a73e8; text-transform: uppercase;
+   letter-spacing: 2px;
+   column-gap: 500px;
+}
+.highlight
+{
+   color: #ff5722;
+}
+.copy-right{
+   text-align: center; font-size: 15px;
+}
+#main
+{
+   margin-top: 70px; padding: 20px;
+}
+.fixed-header
+{
+    position: fixed; top: 0; left:0 ; width: 100%; display: flex; align-items: center;
+}
+
+/*Tout c qui concerne toyota avgo*/
+#avgpui{
+   text-align: center;
+}
+#avgvit{
+   text-align: center;
+}
+#avgvc{
+   text-align: center;
+}
+#avgdim{
+   text-align: center;
+}
+#avgcon{
+   text-align: center;
+}
+#avgmote{
+   text-align: center;
+}
+#avgtechno{
+   text-align: center;
+}
+#avgtran{
+   text-align: center;
+}
+
+/*Tout c qui concerne toyota yaris*/
+#yarpui{
+   text-align: center;
+}
+#yarvit{
+   text-align: center;
+}
+#yarvc{
+   text-align: center;
+}
+#yardim{
+   text-align: center;
+}
+#yarcon{
+   text-align: center;
+}
+#yarmote{
+   text-align: center;
+}
+#yartechno{
+   text-align: center;
+}
+#yartran{
+   text-align: center;
+}
+
+/*Tout c qui concerne toyota CHR*/
+#chpui{
+   text-align: center;
+}
+#chvit{
+   text-align: center;
+}
+#chvc{
+   text-align: center;
+}
+#chdim{
+   text-align: center;
+}
+#chcon{
+   text-align: center;
+}
+#chmote{
+   text-align: center;
+}
+#chtechno{
+   text-align: center;
+}
+#chtran{
+   text-align: center;
+}
+
+/*Tout c qui concerne toyota RAV4*/
+#ravpui{
+   text-align: center;
+}
+#ravvit{
+   text-align: center;
+}
+#ravvc{
+   text-align: center;
+}
+#ravdim{
+   text-align: center;
+}
+#ravcon{
+   text-align: center;
+}
+#ravmote{
+   text-align: center;
+}
+#ravtechno{
+   text-align: center;
+}
+#ravtran{
+   text-align: center;
+}
+
+/*Tout c qui concerne toyota Highlander*/
+#hipui{
+   text-align: center;
+}
+#hivit{
+   text-align: center;
+}
+#hivc{
+   text-align: center;
+}
+#hidim{
+   text-align: center;
+}
+#hicon{
+   text-align: center;
+}
+#himote{
+   text-align: center;
+}
+#hitechno{
+   text-align: center;
+}
+#hitran{
+   text-align: center;
+}
+/*Tout c qui concerne toyota RAV4*/
+#ravpui{
+   text-align: center;
+}
+#ravvit{
+   text-align: center;
+}
+#ravvc{
+   text-align: center;
+}
+#ravdim{
+   text-align: center;
+}
+#ravcon{
+   text-align: center;
+}
+#ravmote{
+   text-align: center;
+}
+#ravtechno{
+   text-align: center;
+}
+#ravtran{
+   text-align: center;
+}
+
+/*Tout c qui concerne toyota RAV4*/
+#ravpui{
+   text-align: center;
+}
+#ravvit{
+   text-align: center;
+}
+#ravvc{
+   text-align: center;
+}
+#ravdim{
+   text-align: center;
+}
+#ravcon{
+   text-align: center;
+}
+#ravmote{
+   text-align: center;
+}
+#ravtechno{
+   text-align: center;
+}
+#ravtran{
+   text-align: center;
+}
+
+/*Tout c qui concerne toyota RAV4*/
+#ravpui{
+   text-align: center;
+}
+#ravvit{
+   text-align: center;
+}
+#ravvc{
+   text-align: center;
+}
+#ravdim{
+   text-align: center;
+}
+#ravcon{
+   text-align: center;
+}
+#ravmote{
+   text-align: center;
+}
+#ravtechno{
+   text-align: center;
+}
+#ravtran{
+   text-align: center;
+}
+/*Tout c qui concerne toyota highlander*/
+#hipui{
+   text-align: center;
+}
+#hivit{
+   text-align: center;
+}
+#hivc{
+   text-align: center;
+}
+#hidim{
+   text-align: center;
+}
+#hicon{
+   text-align: center;
+}
+#himote{
+   text-align: center;
+}
+#hitechno{
+   text-align: center;
+}
+#hitran{
+   text-align: center;
+}
+
+/*Tout c qui concerne toyota Land Cruiser*/
+#lcpui{
+   text-align: center;
+}
+#lcvit{
+   text-align: center;
+}
+#lcvc{
+   text-align: center;
+}
+#lcdim{
+   text-align: center;
+}
+#lccon{
+   text-align: center;
+}
+#lcmote{
+   text-align: center;
+}
+#lctechno{
+   text-align: center;
+}
+#lctran{
+   text-align: center;
+}

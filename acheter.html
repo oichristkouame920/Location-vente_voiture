@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="acheter ou louer.css"> 
+  <link rel="stylesheet" href="C:\Users\Kouamé\Documents\Site web perso\bootstrap-5.0.2-dist\css\bootstrap.css">  
+  <title>Acheter</title>
+</head>
+<body>
+  <script src="C:\Users\Kouamé\Documents\Site web perso\bootstrap-5.0.2-dist\js\bootstrap.bundle.min.js" ></script>    
+  <marquee behavior="" direction=""><h6>VEULLIEZ REMPLIR CE FORMULAIRE CORRECTEMENT POUR EVITER TOUT DESAGREMMENT</h6></marquee>
+  <div class="diapoBG"> </div>
+  <div class="container">
+   <form> <br>
+     <div class="row"> 
+        <h3 class="border" id="apat">ACHAT</h3>
+        <div class="border rounded-4" id="fieldset"> 
+          <fieldset>
+            <legend>&Aacute; Propos de vous</legend>
+            <label>Nom</label><br>
+            <input type="text" placeholder="KOUAME" class="zone-texte" name="nom" autofocus required> <br>
+            <label >Prenoms</label><br>
+            <input type="text" placeholder="Christ" class="zone-texte" name="Prenoms" required> <br>
+            <label >Adresse email</label><br>
+            <input type="email" placeholder="fgyguhgh uzh@vuhuia.ci" class="zone-texte" name="email" required> <br>
+            <label >Contact</label><br>
+            <input type="text" placeholder="+000 xx-xx-xx-xx-xx" class="zone-texte" name="Contacts" required> <br>
+            <label >Adresse</label><br>
+            <input type="text" class="zone-texte" placeholder="Pays, ville, quartier" name="Adresse" required> <br>
+          </fieldset>
+          <fieldset> 
+            <legend>A propos du vehicule</legend>
+            <label>Type de voiture</label><br>
+            <select required >
+              <option value=""> </option>
+              <option name="suv" value="SUV">SUV</option>
+              <option name="berline"value="Berline">Berline</option>
+              <option name="Citadine" value="Citadine">Citadine</option>
+              <option name="tout terr" value="Tout terrain">Tout terrain</option>
+              <option name="cara" value="Caravane"> Caravane</option>
+              <option name="voiturefam" value="voiture familliale">Voiture familliale</option>
+              <option name="course" value="Course">Course</option>
+            </select> <br> 
+            <label for="">Marque </label><br>
+            <select  name="MARQUE" id="Marque" required>
+              <option value="" > </option>
+              <option value="Mercedes">Mercedes</option>
+              <option value="Ford">Ford</option>
+              <option value="toyota">Toyota</option>
+              <option value="Renault">Renault</option>
+              <option value="Nissan">Nissan</option>
+              <option value="BMW" >BMW</option>
+            </select> <br>
+            <label for="">Couleur de la voiture</label>  <br>
+            <input type="color" > <br>
+            <input type="reset" class="box-1" value="Réinitialiser"> <input type="submit" value="Valider" class="box-2"> 
+          </fieldset>
+        </div>
+      </div> <br>
+      <div class="border border-4" id="pol">
+        <h6 >Politique de Confidentialité</h6>
+        En cliquant sur <span id="oui">"Accepter"</span>, vous accepter de vous soumettre à notre politique de confidentialité <br>
+        <label for="" class="lab">Accepter</label><input type="radio" name="acc" required><br>
+        <label for="" class="lab">Refuser</label><input type="radio" name="acc"><br>
+      </div>
+    </form>
+  </div> <br>
+</body>
+</html>

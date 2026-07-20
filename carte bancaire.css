@@ -1,0 +1,130 @@
+body {
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card-container {
+    perspective: 1000px;
+    width: 400px;
+    height: 250px;
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  
+  .card-container:hover .card {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  }
+  
+  .card-front {
+    background: linear-gradient(120deg, #00416a, #e4e5e6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .bank-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .chip {
+    width: 50px;
+    height: 35px;
+    background: gold;
+    border-radius: 8px;
+    margin: 10px 0;
+  }
+  
+  .card-number {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    margin-top: 10px;
+  }
+  
+  .card-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card-holder label, .card-expiration label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+  }
+  
+  .card-logo {
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .card-back {
+    background: #333;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .magnetic-strip {
+    height: 40px;
+    background: #000;
+    margin-top: 20px;
+  }
+  
+  .signature-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eee;
+    padding: 5px;
+    margin-top: 30px;
+    color: #000;
+  }
+  
+  .signature-area label {
+    font-size: 0.7rem;
+    margin-right: 10px;
+  }
+  
+  .signature {
+    font-family: 'Cursive';
+    flex: 1;
+    padding: 5px;
+    border-bottom: 1px solid #000;
+  }
+  
+  .cvv-box {
+    background: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  .back-logo {
+    text-align: right;
+    color: white;
+    font-weight: bold;
+  }
+  
