@@ -1,0 +1,165 @@
+# Audit des chemins - Kouame-Auto
+
+Fichiers existants préservés ; aucune page ou fonction créée.
+
+## Corrections automatiques
+- `index.html` : `accueil-v2.css` → `asset/css/style.css`
+- `page coupe renault.html` : `./img/renault/coupe/renault megane rs.jfif` → `img/renault/coupe/renault megane rs.jfif`
+- `page coupe renault.html` : `./img/renault/coupe/RENAULT_LAGUNA_COUPE.jpeg` → `img/renault/coupe/RENAULT_LAGUNA_COUPE.jpeg`
+- `page coupe renault.html` : `./img/renault/coupe/alpine_a110.jpg` → `img/renault/coupe/alpine_a110.jpg`
+- `page coupe renault.html` : `./img/whatsapp.png` → `img/whatsapp.png`
+- `page coupe renault.html` : `./img/telegram.jpg` → `img/telegram.jpg`
+- `page coupe renault.html` : `./img/web.png` → `img/web.png`
+- `page coupe renault.html` : `./img/twetter.png` → `img/twetter.png`
+- `page berline mercedes.html` : `./img/mercedes/berline/2018-mercedes-classe-a-berline.jpg` → `img/mercedes/berline/2018-mercedes-classe-a-berline.jpg`
+- `page berline mercedes.html` : `./img/mercedes/berline/mercedes-classe-c-220-d-coupe-amg-line.jpg` → `img/mercedes/berline/mercedes-classe-c-220-d-coupe-amg-line.jpg`
+- `page berline mercedes.html` : `./img/mercedes/coupe/mercedes-benz-cla-2023.jpg` → `img/mercedes/coupe/mercedes-benz-cla-2023.jpg`
+- `page berline mercedes.html` : `./img/mercedes/coupe/mercedes slk 2016.jfif` → `img/mercedes/coupe/mercedes slk 2016.jfif`
+- `page berline mercedes.html` : `./img/mercedes/coupe/mercedes-benz-classe-c-2015-2021.jpeg` → `img/mercedes/coupe/mercedes-benz-classe-c-2015-2021.jpeg`
+- `page berline mercedes.html` : `./img/whatsapp.png` → `img/whatsapp.png`
+- `page berline mercedes.html` : `./img/telegram.jpg` → `img/telegram.jpg`
+- `page berline mercedes.html` : `./img/web.png` → `img/web.png`
+- `page berline mercedes.html` : `./img/twetter.png` → `img/twetter.png`
+- `page berline renault.html` : `./img/renault/berline/renault clio berline.jpg` → `img/renault/berline/renault clio berline.jpg`
+- `page berline renault.html` : `./img/renault/berline/renault megane berline.jpg` → `img/renault/berline/renault megane berline.jpg`
+- `page berline renault.html` : `./img/renault/berline/RENAULT-Talisman-5470_90.jpg` → `img/renault/berline/RENAULT-Talisman-5470_90.jpg`
+- `page berline renault.html` : `./img/renault/berline/RENAULT-arkana.jfif` → `img/renault/berline/RENAULT-arkana.jfif`
+- `page berline renault.html` : `./img/renault/berline/renault zoé.jpg` → `img/renault/berline/renault zoé.jpg`
+- `page berline renault.html` : `./img/renault/berline/renault espace.jpg` → `img/renault/berline/renault espace.jpg`
+- `page berline renault.html` : `./img/renault/berline/renault-twingo-twingo.jpg` → `img/renault/berline/renault-twingo-twingo.jpg`
+- `page berline renault.html` : `./img/renault/berline/RENAULT-megane.jfif` → `img/renault/berline/RENAULT-megane.jfif`
+- `page berline renault.html` : `./img/whatsapp.png` → `img/whatsapp.png`
+- `page berline renault.html` : `./img/telegram.jpg` → `img/telegram.jpg`
+- `page berline renault.html` : `./img/web.png` → `img/web.png`
+- `page berline renault.html` : `./img/twetter.png` → `img/twetter.png`
+- `page coupe mercedes.html` : `./img/mercedes/coupe/mercdes AMG GT.jfif` → `img/mercedes/coupe/mercdes AMG GT.jfif`
+- `page coupe mercedes.html` : `./img/mercedes/coupe/mercedes-benz-e-klasse-coupe-2021.jpg` → `img/mercedes/coupe/mercedes-benz-e-klasse-coupe-2021.jpg`
+- `page coupe mercedes.html` : `./img/mercedes/coupe/mercedes-benz-cla-2023.jpg` → `img/mercedes/coupe/mercedes-benz-cla-2023.jpg`
+- `page coupe mercedes.html` : `./img/mercedes/coupe/mercedes slk 2016.jfif` → `img/mercedes/coupe/mercedes slk 2016.jfif`
+- `page coupe mercedes.html` : `./img/mercedes/coupe/mercedes-benz-classe-c-2015-2021.jpeg` → `img/mercedes/coupe/mercedes-benz-classe-c-2015-2021.jpeg`
+- `page coupe mercedes.html` : `./img/whatsapp.png` → `img/whatsapp.png`
+- `page coupe mercedes.html` : `./img/telegram.jpg` → `img/telegram.jpg`
+- `page coupe mercedes.html` : `./img/web.png` → `img/web.png`
+- `page coupe mercedes.html` : `./img/twetter.png` → `img/twetter.png`
+- `page pick up toyota.html` : `./img/toyota/pick up/toyota tundra.jpg` → `img/toyota/pick up/toyota tundra.jpg`
+- `page pick up toyota.html` : `./img/toyota/pick up/toyota tacoma.jfif` → `img/toyota/pick up/toyota tacoma.jfif`
+- `page pick up toyota.html` : `./img/toyota/pick up/toyota hilux.jfif` → `img/toyota/pick up/toyota hilux.jfif`
+- `page pick up toyota.html` : `./img/whatsapp.png` → `img/whatsapp.png`
+- `page pick up toyota.html` : `./img/telegram.jpg` → `img/telegram.jpg`
+- `page pick up toyota.html` : `./img/web.png` → `img/web.png`
+- `page pick up toyota.html` : `./img/twetter.png` → `img/twetter.png`
+- `page suv mercedes.html` : `./img/mercedes/suv/MERCEDES-BENZ-GLA.jpg` → `img/mercedes/suv/MERCEDES-BENZ-GLA.jpg`
+- `page suv mercedes.html` : `./img/mercedes/suv/mercedes GLB.jfif` → `img/mercedes/suv/mercedes GLB.jfif`
+- `page suv mercedes.html` : `./img/mercedes/suv/MERCEDES-BENZ-GLC.jpg` → `img/mercedes/suv/MERCEDES-BENZ-GLC.jpg`
+- `page suv mercedes.html` : `./img/mercedes/suv/mercedes gle 450 2023.jpg` → `img/mercedes/suv/mercedes gle 450 2023.jpg`
+- `page suv mercedes.html` : `./img/mercedes/suv/MERCEDES-BENZ-GLG.jpg` → `img/mercedes/suv/MERCEDES-BENZ-GLG.jpg`
+- `page suv mercedes.html` : `./img/mercedes/suv/Mercedes-Benz G-Class 6x6.jfif` → `img/mercedes/suv/Mercedes-Benz G-Class 6x6.jfif`
+- `page suv mercedes.html` : `./img/mercedes/suv/MERCEDES-BENZ-GLS.jpg` → `img/mercedes/suv/MERCEDES-BENZ-GLS.jpg`
+- `page suv mercedes.html` : `./img/mercedes/suv/Mercedes-Benz-EQS-SUV.jpg` → `img/mercedes/suv/Mercedes-Benz-EQS-SUV.jpg`
+- `page suv mercedes.html` : `./img/mercedes/suv/mercedes-benz_eqb.jpg` → `img/mercedes/suv/mercedes-benz_eqb.jpg`
+- `page suv mercedes.html` : `./img/whatsapp.png` → `img/whatsapp.png`
+- `page suv mercedes.html` : `./img/telegram.jpg` → `img/telegram.jpg`
+- `page suv mercedes.html` : `./img/web.png` → `img/web.png`
+- `page suv mercedes.html` : `./img/twetter.png` → `img/twetter.png`
+- `page mercedes.html` : `./img/mercedes/berline/2018-mercedes-classe-a-berline.jpg` → `img/mercedes/berline/2018-mercedes-classe-a-berline.jpg`
+- `page mercedes.html` : `./img/mercedes/coupe/mercedes-benz-e-klasse-coupe-2021.jpg` → `img/mercedes/coupe/mercedes-benz-e-klasse-coupe-2021.jpg`
+- `page mercedes.html` : `./img/mercedes/suv/mercedes-benz-gle-580-4matic.jpg` → `img/mercedes/suv/mercedes-benz-gle-580-4matic.jpg`
+- `page mercedes.html` : `./img/mercedes/coupe/mercdes AMG GT.jfif` → `img/mercedes/coupe/mercdes AMG GT.jfif`
+- `page mercedes.html` : `./img/mercedes/ncjlaskc.avif` → `img/mercedes/ncjlaskc.avif`
+- `page mercedes.html` : `./img/mercedes/pick up/pickup.jpg` → `img/mercedes/pick up/pickup.jpg`
+- `page mercedes.html` : `./img/whatsapp.png` → `img/whatsapp.png`
+- `page mercedes.html` : `./img/telegram.jpg` → `img/telegram.jpg`
+- `page mercedes.html` : `./img/web.png` → `img/web.png`
+- `page mercedes.html` : `./img/twetter.png` → `img/twetter.png`
+- `page suv renault.html` : `./img/renault/suv/renault captur.jfif` → `img/renault/suv/renault captur.jfif`
+- `page suv renault.html` : `./img/renault/suv/renault koleos.jfif` → `img/renault/suv/renault koleos.jfif`
+- `page suv renault.html` : `./img/renault/suv/S0-modele--renault-kadjar.jpg` → `img/renault/suv/S0-modele--renault-kadjar.jpg`
+- `page suv renault.html` : `./img/renault/suv/renault spring.jfif` → `img/renault/suv/renault spring.jfif`
+- `page suv renault.html` : `./img/renault/suv/renault kangoo.jfif` → `img/renault/suv/renault kangoo.jfif`
+- `page suv renault.html` : `./img/renault/berline/renault espace.jpg` → `img/renault/berline/renault espace.jpg`
+- `page suv renault.html` : `./img/renault/berline/RENAULT-megane.jfif` → `img/renault/berline/RENAULT-megane.jfif`
+- `page suv renault.html` : `./img/whatsapp.png` → `img/whatsapp.png`
+- `page suv renault.html` : `./img/telegram.jpg` → `img/telegram.jpg`
+- `page suv renault.html` : `./img/web.png` → `img/web.png`
+- `page suv renault.html` : `./img/twetter.png` → `img/twetter.png`
+- `page pickup renault.html` : `./img/renault/pick up/essai-renault-alaskan.jpg` → `img/renault/pick up/essai-renault-alaskan.jpg`
+- `page pickup renault.html` : `./img/renault/pick up/renaut oroch.jfif` → `img/renault/pick up/renaut oroch.jfif`
+- `page pickup renault.html` : `./img/renault/pick up/traffic.jpg` → `img/renault/pick up/traffic.jpg`
+- `page pickup renault.html` : `./img/whatsapp.png` → `img/whatsapp.png`
+- `page pickup renault.html` : `./img/telegram.jpg` → `img/telegram.jpg`
+- `page pickup renault.html` : `./img/web.png` → `img/web.png`
+- `page pickup renault.html` : `./img/twetter.png` → `img/twetter.png`
+- `page pick up mercedes.html` : `./img/mercedes/pick up/pickup.jpg` → `img/mercedes/pick up/pickup.jpg`
+- `page pick up mercedes.html` : `./img/whatsapp.png` → `img/whatsapp.png`
+- `page pick up mercedes.html` : `./img/telegram.jpg` → `img/telegram.jpg`
+- `page pick up mercedes.html` : `./img/web.png` → `img/web.png`
+- `page pick up mercedes.html` : `./img/twetter.png` → `img/twetter.png`
+- `page renault.html` : `./img/logo renault.jpg` → `img/logo renault.jpg`
+- `page renault.html` : `./img/renault/berline/renault talisman.jfif` → `img/renault/berline/renault talisman.jfif`
+- `page renault.html` : `./img/renault/coupe/alpine_a110.jpg` → `img/renault/coupe/alpine_a110.jpg`
+- `page renault.html` : `./img/renault/suv/S0-modele--renault-kadjar.jpg` → `img/renault/suv/S0-modele--renault-kadjar.jpg`
+- `page renault.html` : `./img/renault/pick up/essai-renault-alaskan.jpg` → `img/renault/pick up/essai-renault-alaskan.jpg`
+- `page renault.html` : `./img/whatsapp.png` → `img/whatsapp.png`
+- `page renault.html` : `./img/telegram.jpg` → `img/telegram.jpg`
+- `page renault.html` : `./img/web.png` → `img/web.png`
+- `page renault.html` : `./img/twetter.png` → `img/twetter.png`
+- `page toyota.html` : `./img/toyota/berline/2023-Toyota-Corolla-Hybrid-front-34-1536x1024.jpg` → `img/toyota/berline/2023-Toyota-Corolla-Hybrid-front-34-1536x1024.jpg`
+- `page toyota.html` : `./img/mercedes/coupe/mercdes AMG GT.jfif` → `img/mercedes/coupe/mercdes AMG GT.jfif`
+- `page toyota.html` : `./img/toyota/suv/2023-Toyota-RAV4.jpg` → `img/toyota/suv/2023-Toyota-RAV4.jpg`
+- `page toyota.html` : `./img/toyota/berline/toyota avalon.jfif` → `img/toyota/berline/toyota avalon.jfif`
+- `page toyota.html` : `./img/toyota/suv/avygo.jpg` → `img/toyota/suv/avygo.jpg`
+- `page toyota.html` : `./img/toyota/pick up/toyota tacoma.jfif` → `img/toyota/pick up/toyota tacoma.jfif`
+- `page toyota.html` : `./img/whatsapp.png` → `img/whatsapp.png`
+- `page toyota.html` : `./img/telegram.jpg` → `img/telegram.jpg`
+- `page toyota.html` : `./img/web.png` → `img/web.png`
+- `page toyota.html` : `./img/twetter.png` → `img/twetter.png`
+- `acheter ou louer.css` : `./img/18-bugatti_l_ultime-last-chiron.avif` → `img/18-bugatti_l_ultime-last-chiron.avif`
+- `acheter ou louer.css` : `./img/18-bugatti_l_ultime-last-chiron.avif` → `img/18-bugatti_l_ultime-last-chiron.avif`
+- `acheter ou louer.css` : `./img/bugt.jpg` → `img/bugt.jpg`
+- `acheter ou louer.css` : `./img/purosa.jpg` → `img/purosa.jpg`
+- `page berline toyota.html` : `./img/toyota/berline/f37b5591-2019-toyota-yaris-y20-00.jpg` → `img/toyota/berline/f37b5591-2019-toyota-yaris-y20-00.jpg`
+- `page berline toyota.html` : `./img/toyota/berline/2023-Toyota-Corolla-Hybrid-front-34-1536x1024.jpg` → `img/toyota/berline/2023-Toyota-Corolla-Hybrid-front-34-1536x1024.jpg`
+- `page berline toyota.html` : `./img/toyota/berline/toyota camri.jfif` → `img/toyota/berline/toyota camri.jfif`
+- `page berline toyota.html` : `./img/toyota/berline/toyota avalon.jfif` → `img/toyota/berline/toyota avalon.jfif`
+- `page berline toyota.html` : `./img/toyota/berline/toyota mirai.jfif` → `img/toyota/berline/toyota mirai.jfif`
+- `page berline toyota.html` : `./img/toyota/berline/2016_toyota_prius_4dr-hatchback_four-touring_fq_oem_1_815.jpg` → `img/toyota/berline/2016_toyota_prius_4dr-hatchback_four-touring_fq_oem_1_815.jpg`
+- `page berline toyota.html` : `./img/whatsapp.png` → `img/whatsapp.png`
+- `page berline toyota.html` : `./img/telegram.jpg` → `img/telegram.jpg`
+- `page berline toyota.html` : `./img/web.png` → `img/web.png`
+- `page berline toyota.html` : `./img/twetter.png` → `img/twetter.png`
+- `Notre selection.html` : `./img/mercedes/logo mrcedes.jfif` → `img/mercedes/logo mrcedes.jfif`
+- `Notre selection.html` : `./img/toyota/lofo toyota.jpg` → `img/toyota/lofo toyota.jpg`
+- `Notre selection.html` : `./img/bmw/logo bmw.jpg` → `img/bmw/logo bmw.jpg`
+- `Notre selection.html` : `./img/logo renault.jpg` → `img/logo renault.jpg`
+- `Notre selection.html` : `./img/logo nissan.jpg` → `img/logo nissan.jpg`
+- `Notre selection.html` : `./img/whatsapp.png` → `img/whatsapp.png`
+- `Notre selection.html` : `./img/telegram.jpg` → `img/telegram.jpg`
+- `Notre selection.html` : `./img/web.png` → `img/web.png`
+- `Notre selection.html` : `./img/twetter.png` → `img/twetter.png`
+- `page suv toyota.html` : `./img/toyota/suv/avygo.jpg` → `img/toyota/suv/avygo.jpg`
+- `page suv toyota.html` : `./img/toyota/suv/1-toyota-yaris-cross-2021-uk-fd-hero-front.webp` → `img/toyota/suv/1-toyota-yaris-cross-2021-uk-fd-hero-front.webp`
+- `page suv toyota.html` : `./img/toyota/suv/toyota-c-hr.jpg` → `img/toyota/suv/toyota-c-hr.jpg`
+- `page suv toyota.html` : `./img/toyota/suv/2023-Toyota-RAV4.jpg` → `img/toyota/suv/2023-Toyota-RAV4.jpg`
+- `page suv toyota.html` : `./img/toyota/suv/toyota highlander.jfif` → `img/toyota/suv/toyota highlander.jfif`
+- `page suv toyota.html` : `./img/toyota/suv/toyota-land-cruiser.jpg` → `img/toyota/suv/toyota-land-cruiser.jpg`
+- `page suv toyota.html` : `./img/whatsapp.png` → `img/whatsapp.png`
+- `page suv toyota.html` : `./img/telegram.jpg` → `img/telegram.jpg`
+- `page suv toyota.html` : `./img/web.png` → `img/web.png`
+- `page suv toyota.html` : `./img/twetter.png` → `img/twetter.png`
+- `asset/css/style.css` : `img/mercedes/ncjlaskc.avif` → `../../img/mercedes/ncjlaskc.avif`
+
+## Références non résolues (à examiner, pas de cible inventée)
+- `page coupe renault.html` : `./img/renault/coupe/`
+- `page sport mercedes.html` : `page sport mercedes .css`
+- `kenane.html` : `./img/`
+- `page pick up toyota.html` : `./img/renault/pick up`
+- `page mercedes.html` : `https.www.google map.com`
+- `page pickup renault.html` : `./img/renault/pick up`
+- `page renault.html` : `./img/renault/sport/`
+- `page renault.html` : `./img/renault/`
+- `page renault.html` : `https.www.google map.com`
+- `page toyota.html` : `page coupe toyota.html`
+- `page toyota.html` : `page sport toyota.html`
+- `page toyota.html` : `https.www.google map.com`
+- `Notre selection.html` : `./img/ford/logo ford`
+- `Notre selection.html` : `https.www.google map.com`

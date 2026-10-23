@@ -1,7 +1,7 @@
 form
 {
     background:linear-gradient(50deg, #ff6b4b, #4ecdc4); justify-items: center;
-    /*background-image: url("./img/18-bugatti_l_ultime-last-chiron.avif");
+    /*background-image: url("img/18-bugatti_l_ultime-last-chiron.avif");
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;*/
@@ -83,7 +83,7 @@ label{
     text-transform: uppercase; font-weight: bold; font-style: italic;
 }
 @keyframe{
-    0%{ background-image: url("./img/18-bugatti_l_ultime-last-chiron.avif")}
-    33%{ background-image: url("./img/bugt.jpg")}
-    66%{ background-image: url("./img/purosa.jpg")}
+    0%{ background-image: url("img/18-bugatti_l_ultime-last-chiron.avif")}
+    33%{ background-image: url("img/bugt.jpg")}
+    66%{ background-image: url("img/purosa.jpg")}
 }

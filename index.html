@@ -1,177 +1,158 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page d'accueil</title>
-  <link rel="stylesheet" href="C:\Users\Kouamé\Documents\Site web perso\bootstrap-5.0.2-dist\css\bootstrap.css">  
-  <link rel="stylesheet" href="page acceuil.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kouame-Auto : découvrez notre sélection de véhicules à acheter ou louer.">
+    <title>Kouame-Auto | Trouvez votre prochaine voiture</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
 </head>
+
 <body>
-  <marquee behavior="" direction="">BIENVENUE SUR NOTRE PLATEFORME.</marquee>
-  <nav>
-    <div class="container">
-      <ul class="nav py-4">
-        <div class="col">
-          <div class="logo">
-            Kouame<span class="highlight">-Auto</span>
-          </div>
+    <div class="announcement">Votre prochain trajet commence ici <span>•</span> Achat & location de véhicules</div>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-dark container py-3" aria-label="Navigation principale">
+            <a class="brand navbar-brand" href="index.html">KOUAME<span>AUTO</span><small>PREMIUM MOBILITY</small></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Ouvrir le menu"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Notre selection.html">Nos véhicules</a></li>
+                    <li class="nav-item"><a class="btn btn-gold ms-lg-2" href="#contact">Nous contacter <span aria-hidden="true">↗</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-image" aria-hidden="true"></div>
+            <div class="hero-shade" aria-hidden="true"></div>
+            <div class="container hero-content">
+                <p class="eyebrow"><span class="gold-line"></span> LA ROUTE VOUS APPARTIENT</p>
+                <h1>Plus qu'une voiture.<br><em>Une expérience.</em></h1>
+                <p class="hero-subtitle">Explorez notre sélection de véhicules pour vos déplacements du quotidien, vos
+                    escapades ou vos grandes occasions.</p>
+                <div class="hero-actions"><a class="btn btn-gold btn-lg" href="Notre selection.html">Explorer nos
+                        véhicules <span aria-hidden="true">↗</span></a><a class="btn btn-outline-light btn-lg"
+                        href="louer.html">Louer un véhicule</a></div>
+                <div class="hero-note"><span class="line"></span> ACHAT <b>·</b> LOCATION <b>·</b> LIBERTÉ</div>
+            </div>
+            <div class="hero-count">01 <span>/</span> 03</div>
+        </section>
+        <section class="quick-strip" aria-label="Nos services">
+            <div class="container strip-inner">
+                <div><span class="strip-icon">✦</span>
+                    <div><strong>Une sélection variée</strong><small>Berlines, SUV et pick-up</small></div>
+                </div>
+                <div><span class="strip-icon">↗</span>
+                    <div><strong>Achat ou location</strong><small>À vous de choisir</small></div>
+                </div>
+                <div><span class="strip-icon">◎</span>
+                    <div><strong>Un accompagnement</strong><small>Pour chaque projet auto</small></div>
+                </div>
+            </div>
+        </section>
+        <section class="section selection" id="selection">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <p class="section-kicker">NOTRE UNIVERS</p>
+                        <h2>À chaque envie, <em>son véhicule.</em></h2>
+                    </div><a class="text-link" href="Notre selection.html">Voir toute la sélection <span
+                            aria-hidden="true">↗</span></a>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6"><a class="vehicle-card" href="page suv mercedes.html"><img
+                                loading="lazy" src="img/mercedes/suv/MERCEDES-BENZ-GLA.jpg"
+                                alt="SUV Mercedes-Benz GLA"><span class="card-overlay"><small>01 /
+                                    POLYVALENCE</small><strong>Les SUV</strong><span>Découvrir <span
+                                        aria-hidden="true">↗</span></span></span></a></div>
+                    <div class="col-lg-4 col-md-6"><a class="vehicle-card" href="page berline toyota.html"><img
+                                loading="lazy"
+                                src="img/toyota/berline/2016_toyota_prius_4dr-hatchback_four-touring_fq_oem_1_815.jpg"
+                                alt="Berline Toyota Prius"><span class="card-overlay"><small>02 /
+                                    ÉLÉGANCE</small><strong>Les berlines</strong><span>Découvrir <span
+                                        aria-hidden="true">↗</span></span></span></a></div>
+                    <div class="col-lg-4 col-md-12"><a class="vehicle-card" href="page pickup renault.html"><img
+                                loading="lazy" src="img/renault/pick up/essai-renault-alaskan.jpg"
+                                alt="Pick-up Renault Alaskan"><span class="card-overlay"><small>03 /
+                                    AVENTURE</small><strong>Les pick-up</strong><span>Découvrir <span
+                                        aria-hidden="true">↗</span></span></span></a></div>
+                </div>
+            </div>
+        </section>
+        <section class="experience section">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <div class="experience-photo"><img loading="lazy" src="img/mercedes/la voiture noire.jpg"
+                                alt="Voiture Mercedes noire au design sportif"><span class="photo-tag">KOUAME AUTO
+                                <b>✦</b> L'ART DE CONDUIRE</span></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="section-kicker">POURQUOI KOUAME-AUTO ?</p>
+                        <h2>Le plaisir de conduire, <em>sans compromis.</em></h2>
+                        <p class="muted">Une voiture doit s'adapter à votre vie, pas l'inverse. Choisissez le véhicule
+                            qui correspond à vos besoins, avec un parcours simple pour découvrir, acheter ou louer.</p>
+                        <div class="feature"><span>01</span>
+                            <div><strong>Un choix adapté à vos besoins</strong>
+                                <p>Des véhicules urbains aux modèles familiaux ou tout-terrain.</p>
+                            </div>
+                        </div>
+                        <div class="feature"><span>02</span>
+                            <div><strong>Deux façons de prendre la route</strong>
+                                <p>Explorez les possibilités d'achat et de location.</p>
+                            </div>
+                        </div><a href="acheter.html" class="btn btn-dark-outline">Découvrir l'achat <span
+                                aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="container cta-inner">
+                <div>
+                    <p class="section-kicker">PRÊT À PARTIR ?</p>
+                    <h2>Votre prochain véhicule<br>vous attend.</h2>
+                    <p>Parcourez notre catalogue et trouvez votre coup de cœur.</p>
+                </div><a class="btn btn-gold btn-lg" href="Notre selection.html">Voir les véhicules <span
+                        aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-main">
+                <div><a class="brand footer-brand" href="index.html">KOUAME<span>AUTO</span><small>PREMIUM
+                            MOBILITY</small></a>
+                    <p>Le plaisir de prendre la route, à votre façon.</p>
+                </div>
+                <div>
+                    <h3>Navigation</h3><a href="index.html">Accueil</a><a href="Notre selection.html">Nos
+                        véhicules</a><a href="acheter.html">Acheter</a><a href="louer.html">Louer</a>
+                </div>
+                <div>
+                    <h3>Nos services</h3>
+                    <p>Vente de véhicules</p>
+                    <p>Location de véhicules</p>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <p>Abidjan · Côte d'Ivoire</p>
+                    <p>Tél. : 05 03 23 16 25 <small>(contact de l'ancien site, à confirmer)</small></p>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© <span id="year"></span> Kouame-Auto. Tous droits
+                    réservés.</span><span>Une nouvelle expérience automobile.</span></div>
         </div>
-        <li class="border border-primary border-1 rounded" ><a href="page acceuil.html" class="nav-link">Accueil</a></li>
-        <li class="border border-primary border-1 rounded"><a href="Notre selection.html"class="nav-link">Notre Selection</a></li>
-        <li class="border border-primary border-1 rounded nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Acheter/Louer</a>
-          <ul class="dropdown-menu">
-            <li><a href="acheter.html" class="dropdown-item">Acheter</a></li>
-            <li><a href="louer.html" class="dropdown-item">Louer</a></li>
-          </ul>
-        </li>
-        <li class="border border-primary border-1 rounded"><a href="#" class="nav-item">En plus</a></li>
-      </ul>
-    </div>
-  </nav> <br>
-  <div class="container">
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./img/mercedes/ncjlaskc.avif" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>SUV MERCEDES</h5>
-            <p>Impose le respect !!!</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/mercedes/coupe/mercedes-benz-classe-c-2015-2021.jpeg" class="d-bloc w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Mercedes CLA 2023</h5>
-            <p>Conduisez avec élégance </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/renault/pick up/essai-renault-alaskan.jpg" class="d-bloc w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Renautlt Alaskan</h5>
-            <p class="p">Domptez la puissance !!!</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/mercedes/pick up/pickup.jpg" class="d-bloc w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Mercedes class X</h5>
-            <p>Montrez à la nature qui est le maitre</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/renault/berline/RENAULT-megane.jfif" class="d-bloc w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Renault Megane</h5>
-            <p>L'élégance couplé avec la férocité</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/toyota/berline/2016_toyota_prius_4dr-hatchback_four-touring_fq_oem_1_815.jpg" class="d-bloc w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Toyota Prius 2016</h5>
-            <p>Ideal pour vos déplacement quotidien </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/toyota/pick up/toyota tundra.jpg" class="d-bloc w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Toyota TUNDRA</h5>
-            <p>AUCUNE ROUTE NE VOUS RESITERA</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/mercedes/suv/MERCEDES-BENZ-GLA.jpg" class="d-bloc w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>MERCEDES BENZ GLA</h5>
-            <p>VOUS NE PASSERAI PAS INNAPERCUE</p>
-          </div>
-        </div>
-      </div>
-    </div><br>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-    <script src="C:\Users\Kouamé\Documents\Site web perso\bootstrap-5.0.2-dist\js\bootstrap.bundle.min.js" ></script>    
-    <div class="container"></div>
-     <div class="row" id="port">
-       <div class="row">
-         <div class="col-mb-4">
-           <img src="./img/nissan/nissan suv bleu.jpg" alt="introuvble " class="rounded img-thumbail img-fluid float-start my-auto" id="je1"> <br>
-         </div>
-         <div class="col-mb-6">
-           <span class="sal">Des vehicules robustes et spacieux adapter à vos deplacement quotidient et les longs trajets. Un grand espace pour acceuillir toute une famille. Un espace de rangement optimisé pour acceuillir un volume important de bagages. Une faible consommation de caburant idéal pour vos économies</span>
-         </div>
-       </div>
-       <div class="row">
-         <div class="col-mb-4">
-           <img src="./img/jeep/jeep tout terrain.jpg" alt="introuvble" class="rounded img-thumbail img-fluid" id="je2"> <br>
-         </div>
-         <div class="col-mb-6">
-           <span class="sal">Un moteur puissant qui permet de repousser les limites de possile. Un vehicule adapté à tout type de terrain avec un chassi robuste capable de vous emmener là ou vous voulez grâce à ses quatre(4) roues motrices.</span>
-         </div>
-        </div>
-        <div class="row">
-          <div class="col-mb-4">
-           <img src="./img/audi.jfif" alt="introuvble" class="rounded img-thumbail img-fluid float-end" id="je3"> <br>
-          </div>
-          <div class="col-mb-6">
-            <span class="sal">Une voiture légère et rrapide pour vous déplacer partout dans le ville. Avec une failble consomation elle est idéale pour votre porte-feuille  </span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-mb-4">
-            <img src="./img/mercedes/la voiture noire.jpg" alt="introuvble" class="rounded img-thumbail img-fluid" id="je4"> <br>
-          </div>
-          <div class="col-mb-6">
-            <span class="sal">Une voiture au design élégant associé a un moteur puissant.  </span>
-          </div>
-        </div>
-    </div>
-  </div>
-  <footer width="100%">
-    <div class="container">
-      <div class="row">  
-       <div class="col">
-         <div class="nsp"> Nos prestations </div>
-         <ul>
-           <li>Gerance</li>
-           <li>Location</li>
-           <li>Partenariat</li>
-           <li>Expertise</li>
-           <li>Consulting</li>
-         </ul>
-       </div>  
-       <div class="col">
-         <div class="nsp">Nos contacts</div>
-         <ul>
-           <li><img src="./img/whatsapp.png" alt="Logo whatsapp"> 05-03-23-16-25 </li>
-           <li><img src="./img/telegram.jpg" alt="Logo telegram">Kouame-Auto</li>
-           <li><img src="./img/web.png" alt="Logo web">Kouame-Auto</li>
-           <li><img src="./img/twetter.png" alt="Logo twetter">Kouame-Auto</li>
-         </ul>
-       </div>
-       <div class="col">
-         <div class="nsp">Nos Locaux</div>
-         <ul>
-           <li>Abidjan</li>
-           <li>Bouaké</li>
-         </ul>
-       </div>
-      </div>
-     </div>
-     <div class="copy-right">
-        &copy;Kouame-Auto Tout droit reservé <br>
-        Service client:05 03 23 16 25
-     </div> 
-    </div>
-  </footer>
+    </footer>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
 </body>
+
 </html>
