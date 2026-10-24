@@ -1,10 +1,10 @@
 .border /*pour les elements contenus dans le border*/
 {
-    background-color: gold;
+    background-color: #e9d6bc;
 }
 nav /* pour les elements(texte et couleur de fond) du header */
 {
-    background-color: darkblue;
+    background-color: #571b30;
     color: white;
     height: 100px;
     font-size: 20px;
@@ -30,7 +30,7 @@ section /*pour creer une sorte de fenetre d'expo*/
 .img
 {
     padding: 3px;/*POur separer l'image du bord de la box*/
-    background: rgb(222, 238, 237);
+    background: rgb(248, 243, 236);
     display: flex;
     flex-wrap: wrap; 
     justify-content: center; 
@@ -103,7 +103,7 @@ h3 /*pour les titres en dessous des images de marque*/
 
 footer/* pour les elements(texte et couleur de fond du footer  */
 {
-    background-color:  darkblue;
+    background-color:  #571b30;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     font-size:large;
@@ -132,12 +132,12 @@ ul
     font-family: Arial, sans-serif;
     font-size: 32px;
     font-weight: bold;
-    color: #1a73e8; text-transform: uppercase;
+    color: #571b30; text-transform: uppercase;
     letter-spacing: 2px;
 }
 .highlight
 {
-    color: #ff5722;
+    color: #a06474;
 }
 .fixed-header
 {

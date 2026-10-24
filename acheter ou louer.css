@@ -1,6 +1,6 @@
 form
 {
-    background:linear-gradient(50deg, #ff6b4b, #4ecdc4); justify-items: center;
+    background:linear-gradient(50deg, #6d293f, #e9d6bc); justify-items: center;
     /*background-image: url("img/18-bugatti_l_ultime-last-chiron.avif");
     background-repeat:no-repeat;
     background-size: cover;
@@ -8,14 +8,14 @@ form
 }
 nav /* pour conntroler la partie header */
 {
-    background-color: darkblue;
+    background-color: #571b30;
     color: white;
     height: 100px;
     font-size: 20px;
 }
 footer /* pour conntroler la couleur de fond du footer; la couleur des caractere et autres dans le footer */
 {
-    background-color: darkblue;
+    background-color: #571b30;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     font-size:large;
@@ -46,7 +46,7 @@ a
 }
 .box-1:hover /**Pour les animations des bouttons de validation et d'annulation**/
 {
-    transform: scale(0.8); color: red;
+    transform: scale(0.8); color: #571b30;
 }
 .box-2 /**Pour les boutton de validattion et d'annulation**/
 {
@@ -54,7 +54,7 @@ a
 }
 .box-2:hover /**Pour les animations des bouttons de validation et d'annulation**/
 {
-    transform: scale(0.8); color: green;
+    transform: scale(0.8); color: #571b30;
 }
 h6
 {
@@ -67,14 +67,14 @@ h6
 }
 legend /***Pour la legende du formulaire**/
 {
-    text-decoration: underline; color:white; font-weight: bold;
+    text-decoration: underline; color:#571b30; font-weight: bold;
 }
 #apat /**Pour le titre de chaque formulaire**/
 {
     background-color: white; text-align: center;
 }
 label{
-    color:white;
+    color:#fff;
 }
 .lab{
     color:black;

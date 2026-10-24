@@ -1,10 +1,10 @@
 .border-primary
 {
-   background-color: gold;
+   background-color: #e9d6bc;
 }
 nav
 {
-   background-color:darkblue;
+   background-color:#571b30;
    color: white;
    height: 100px;
    font-size: 20px;
@@ -127,7 +127,7 @@ a
 }
 footer
 {
-   background-color: darkblue;
+   background-color: #571b30;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    color: white;
    font-size:large;
@@ -149,13 +149,13 @@ h5{
    font-family: Arial, sans-serif;
    font-size: 32px;
    font-weight: bold;
-   color: #1a73e8; text-transform: uppercase;
+   color: #571b30; text-transform: uppercase;
    letter-spacing: 2px;
    column-gap: 500px;
 }
 .highlight
 {
-   color: #ff5722;
+   color: #a06474;
 }
 .copy-right{
    text-align: center; font-size: 15px;

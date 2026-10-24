@@ -1,0 +1,14 @@
+/* OCK Automotive - palette commune des anciennes pages */
+:root {
+    --ock-bordeaux: #571b30;
+    --ock-bordeaux-light: #68263d;
+    --ock-ivory: #faf6f0;
+    --ock-beige: #e9d6bc;
+    --ock-text: #292326;
+}
+body { color: var(--ock-text); background-color: var(--ock-ivory); }
+button, input, select, textarea { accent-color: var(--ock-bordeaux); }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 2px solid #94546a;
+    outline-offset: 2px;
+}
