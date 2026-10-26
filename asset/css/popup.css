@@ -1,0 +1,381 @@
+
+/* ==========================================
+   OCK AUTOMOTIVE
+   POP-UP DE BIENVENUE
+========================================== */
+
+.welcome-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 24px;
+
+    background: rgba(25, 15, 20, 0.72);
+    backdrop-filter: blur(8px);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.35s ease,
+        visibility 0.35s ease;
+}
+
+.welcome-overlay[hidden] {
+    display: none;
+}
+
+.welcome-overlay.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* ==========================================
+   FENÊTRE PRINCIPALE
+========================================== */
+
+.welcome-modal {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 42% 58%;
+
+    width: 100%;
+    max-width: 860px;
+    max-height: calc(100dvh - 48px);
+
+    background: #FAF6F0;
+    border-radius: 20px;
+
+    overflow-y: auto;
+    overscroll-behavior: contain;
+
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.3);
+
+    transform: translateY(24px) scale(0.97);
+
+    transition: transform 0.4s ease;
+}
+
+.welcome-overlay.is-visible .welcome-modal {
+    transform: translateY(0) scale(1);
+}
+
+
+/* ==========================================
+   PARTIE GAUCHE : MARQUE
+========================================== */
+
+.welcome-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 50px 36px;
+
+    color: #FFFFFF;
+
+    background: linear-gradient(
+        145deg,
+        #713049,
+        #571B30 55%,
+        #39111F
+    );
+}
+
+.welcome-brand-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 76px;
+    height: 76px;
+    margin-bottom: 30px;
+
+    border: 1px solid rgba(233, 214, 188, 0.5);
+    border-radius: 18px;
+
+    color: #E9D6BC;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.welcome-brand h2 {
+    margin: 0 0 16px;
+
+    color: #FFFFFF;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.welcome-brand p {
+    color: #E9D6BC;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.welcome-brand-line {
+    display: block;
+
+    width: 55px;
+    height: 2px;
+    margin: 25px 0;
+
+    background: #E9D6BC;
+}
+
+.welcome-brand-bottom {
+    font-size: 11px !important;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   PARTIE DROITE : CONTENU
+========================================== */
+
+.welcome-content {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 65px 48px 50px;
+}
+
+.welcome-close {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #EFE5DE;
+    color: #571B30;
+
+    font-size: 26px;
+    line-height: 1;
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.welcome-close:hover {
+    background: #E9D6BC;
+    transform: rotate(90deg);
+}
+
+.welcome-eyebrow {
+    margin-bottom: 18px;
+
+    color: #873F58;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.welcome-content h2 {
+    margin-bottom: 20px;
+
+    color: #292326;
+    font-size: clamp(29px, 4vw, 40px);
+    font-weight: 750;
+    line-height: 1.15;
+}
+
+.welcome-content > p {
+    margin-bottom: 25px;
+
+    color: #675D60;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.welcome-features {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    margin-bottom: 32px;
+}
+
+.welcome-features span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #43373B;
+    font-size: 13px;
+}
+
+.welcome-features span::before {
+    content: "✓";
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 22px;
+    height: 22px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+    background: #F0E2D7;
+
+    color: #571B30;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+
+/* ==========================================
+   BOUTONS
+========================================== */
+
+.welcome-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+
+    width: 100%;
+    padding: 16px 22px;
+
+    border-radius: 9px;
+
+    background: #571B30;
+    color: #FFFFFF;
+
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.welcome-action:hover {
+    background: #78314A;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+.welcome-secondary {
+    align-self: center;
+
+    margin-top: 18px;
+    padding: 8px 10px;
+
+    border: none;
+    background: transparent;
+
+    color: #675D60;
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+.welcome-secondary:hover {
+    color: #571B30;
+    text-decoration: underline;
+}
+
+.welcome-action:focus-visible,
+.welcome-secondary:focus-visible,
+.welcome-close:focus-visible {
+    outline: 3px solid #C29264;
+    outline-offset: 3px;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 700px) {
+
+    .welcome-overlay {
+        padding: 16px;
+    }
+
+    .welcome-modal {
+        grid-template-columns: 1fr;
+        max-height: calc(100dvh - 32px);
+    }
+
+    .welcome-brand {
+        padding: 28px 24px;
+    }
+
+    .welcome-brand-icon {
+        width: 55px;
+        height: 55px;
+        margin-bottom: 12px;
+
+        font-size: 16px;
+    }
+
+    .welcome-brand h2 {
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+
+    .welcome-brand p {
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .welcome-brand-line,
+    .welcome-brand-bottom {
+        display: none;
+    }
+
+    .welcome-content {
+        padding: 38px 26px 28px;
+    }
+
+    .welcome-content h2 {
+        font-size: 29px;
+    }
+
+    .welcome-close {
+        top: 12px;
+        right: 12px;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .welcome-overlay,
+    .welcome-modal,
+    .welcome-close,
+    .welcome-action {
+        transition: none;
+    }
+
+}

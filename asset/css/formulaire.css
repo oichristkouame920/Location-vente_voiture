@@ -1,0 +1,627 @@
+/* ============================================================
+   OCK AUTOMOTIVE — FORMULAIRES ACHAT ET LOCATION
+   Fichier commun : asset/css/formulaire.css
+   Bootstrap doit être chargé AVANT ce fichier.
+   Anciennes classes et nouveau HTML restent compatibles.
+============================================================ */
+
+/* 1. IDENTITÉ VISUELLE */
+:root {
+    --primary: #571B30;
+    --primary-hover: #702B43;
+    --primary-dark: #401425;
+    --beige: #E9D6BC;
+    --ivory: #FAF6F0;
+    --white: #FFFFFF;
+    --text: #292326;
+    --text-muted: #655960;
+    --border-color: #D9C7BB;
+    --focus-color: #A76B80;
+    --shadow: 0 18px 50px rgba(35, 15, 24, 0.24);
+    --radius: 14px;
+    --transition: 0.22s ease;
+}
+
+/* 2. ARRIÈRE-PLAN COMMUN */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body.form-page {
+    min-height: 100vh;
+    margin: 0;
+    color: var(--text);
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--primary);
+    background-image:
+        linear-gradient(
+            115deg,
+            rgba(64, 20, 37, 0.62) 0%,
+            rgba(87, 27, 48, 0.34) 55%,
+            rgba(87, 27, 48, 0.18) 100%
+        ),
+        url("../../img/mercedes/ncjlaskc.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.form-page main.container,
+.form-page > .container {
+    padding-top: 32px;
+    padding-bottom: 56px;
+}
+
+/* 3. ÉVENTUELLE NAVIGATION ET PIED DE PAGE */
+.form-page nav,
+.form-page footer {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.form-page nav a,
+.form-page footer a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+.form-page nav a:hover,
+.form-page footer a:hover {
+    color: var(--beige);
+}
+
+.form-page footer {
+    padding: 28px 20px;
+}
+
+.form-page footer img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.form-page footer .nsp {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+/* 4. INTRODUCTION AU-DESSUS DE LA CARTE */
+.form-page .form-intro {
+    max-width: 780px;
+    margin: 0 auto 28px;
+    text-align: center;
+}
+
+.form-page .form-eyebrow {
+    display: inline-block;
+    color: var(--beige);
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.form-page .form-intro h1 {
+    margin: 12px 0;
+    color: var(--white);
+    font-size: clamp(1.9rem, 4vw, 3rem);
+    font-weight: 750;
+    line-height: 1.18;
+    text-wrap: balance;
+    text-shadow: 0 2px 12px rgba(20, 10, 15, 0.25);
+}
+
+.form-page .form-intro p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #FFF6F6;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* 5. BANDEAU : REMPLACE L'ANCIEN <marquee> */
+.form-page .form-notice {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: min(calc(100% - 32px), 980px);
+    margin: 18px auto 24px;
+    padding: 18px 22px;
+    color: var(--white);
+    background-color: rgba(64, 20, 37, 0.92);
+    border: 1px solid rgba(233, 214, 188, 0.45);
+    border-radius: var(--radius);
+    box-shadow: 0 8px 28px rgba(35, 15, 24, 0.18);
+    animation: notice-enter 0.45s ease-out both;
+}
+
+.form-page .form-notice-icon {
+    display: grid;
+    flex: 0 0 44px;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    color: var(--beige);
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.form-page .form-notice-content h2 {
+    margin: 0 0 5px;
+    color: var(--white);
+    font-size: 1.03rem;
+    font-weight: 700;
+}
+
+.form-page .form-notice-content p {
+    margin: 0;
+    color: #F6E8ED;
+    font-size: 0.92rem;
+    line-height: 1.55;
+}
+
+@keyframes notice-enter {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 6. GRANDE CARTE DU FORMULAIRE */
+.form-page form,
+.form-page form.vehicle-form {
+    width: 100%;
+    max-width: 980px;
+    margin: 20px auto;
+    padding: clamp(22px, 4vw, 46px);
+    color: var(--text);
+    background-color: rgba(250, 246, 240, 0.97);
+    border: 1px solid rgba(233, 214, 188, 0.82);
+    border-radius: 22px;
+    box-shadow: var(--shadow);
+}
+
+/* Compatibilité avec les anciens formulaires Bootstrap. */
+.form-page form > .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.form-page form > .row > .border,
+.form-page form #fieldset {
+    border-color: var(--border-color) !important;
+}
+
+.form-page form > .row > div.border {
+    padding: 12px 22px;
+    border-radius: 14px !important;
+}
+
+.form-page #apat {
+    margin: 0 0 24px;
+    padding: 8px 0 18px;
+    color: var(--primary);
+    background: transparent;
+    border: 0 !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    font-weight: 750;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.form-page .form-heading {
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.form-page .form-heading .form-eyebrow {
+    color: #82445A;
+}
+
+.form-page .form-heading h2 {
+    margin: 10px 0;
+    color: var(--primary);
+    font-size: clamp(1.55rem, 3vw, 2.1rem);
+    font-weight: 750;
+}
+
+.form-page .form-heading p {
+    margin: 0;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* 7. SECTIONS ET TITRES */
+.form-page fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 18px 0 28px;
+    border: 0;
+}
+
+.form-page fieldset + fieldset {
+    margin-top: 16px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+}
+
+.form-page fieldset legend {
+    float: none;
+    width: 100%;
+    margin-bottom: 22px;
+    padding-bottom: 10px;
+    color: var(--primary);
+    border-bottom: 1px solid var(--border-color);
+    font-size: 1.16rem;
+    font-weight: 750;
+    text-decoration: none;
+}
+
+.form-page .form-section legend {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 24px;
+}
+
+.form-page .section-number {
+    display: inline-grid;
+    flex: 0 0 38px;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    color: var(--primary);
+    background-color: #F0E4D8;
+    border-radius: 10px;
+    font-size: 0.92rem;
+}
+
+/* 8. LIBELLÉS, CHAMPS ET LISTES */
+.form-page form label {
+    display: inline-block;
+    margin-bottom: 7px;
+    color: var(--text);
+    font-size: 0.94rem;
+    font-weight: 600;
+}
+
+.form-page form input[type="text"],
+.form-page form input[type="email"],
+.form-page form input[type="tel"],
+.form-page form input[type="date"],
+.form-page form input[type="number"],
+.form-page form select,
+.form-page form textarea,
+.form-page form .zone-texte,
+.form-page form .form-control,
+.form-page form .form-select {
+    display: block;
+    width: 100%;
+    min-height: 48px;
+    margin-bottom: 18px;
+    padding: 11px 14px;
+    color: var(--text);
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 11px;
+    font: inherit;
+    font-size: 0.95rem;
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+/* Les nouvelles grilles Bootstrap gèrent elles-mêmes l'espacement. */
+.form-page .vehicle-form .row.g-3 .form-control,
+.form-page .vehicle-form .row.g-3 .form-select,
+.form-page .vehicle-form .row.g-3 .zone-texte {
+    margin-bottom: 0;
+}
+
+.form-page input::placeholder,
+.form-page textarea::placeholder {
+    color: #81757A;
+    opacity: 1;
+}
+
+.form-page form input:not([type="checkbox"]):not([type="radio"]):focus,
+.form-page form select:focus,
+.form-page form textarea:focus {
+    border-color: var(--focus-color);
+    outline: 2px solid transparent;
+    box-shadow: 0 0 0 3px rgba(167, 107, 128, 0.19);
+}
+
+.form-page form select {
+    cursor: pointer;
+}
+
+.form-page form select option {
+    color: var(--text);
+    background-color: var(--white);
+}
+
+.form-page form input[type="color"] {
+    display: block;
+    width: 76px;
+    height: 48px;
+    margin: 6px 0 22px;
+    padding: 5px;
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* 9. BOUTONS : ANCIENS <input> ET NOUVEAUX <button> */
+.form-page .box-1,
+.form-page .box-2,
+.form-page form input[type="reset"],
+.form-page form input[type="submit"],
+.form-page .btn-reset,
+.form-page .btn-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 48px;
+    min-width: 142px;
+    padding: 11px 22px;
+    margin: 6px 8px 6px 0;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 650;
+    cursor: pointer;
+    transition:
+        background-color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+.form-page form input[type="submit"],
+.form-page .btn-submit {
+    color: var(--white);
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.form-page form input[type="reset"],
+.form-page .btn-reset {
+    color: var(--primary);
+    background-color: var(--beige);
+    border: 1px solid var(--border-color);
+}
+
+.form-page form input[type="submit"]:hover,
+.form-page .btn-submit:hover {
+    color: var(--white);
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(87, 27, 48, 0.22);
+}
+
+.form-page form input[type="reset"]:hover,
+.form-page .btn-reset:hover {
+    background-color: #DDC5A8;
+    transform: translateY(-2px);
+}
+
+.form-page form input[type="submit"]:focus-visible,
+.form-page form input[type="reset"]:focus-visible,
+.form-page .btn-submit:focus-visible,
+.form-page .btn-reset:focus-visible {
+    outline: 3px solid var(--focus-color);
+    outline-offset: 3px;
+}
+
+.form-page .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.form-page .form-actions button {
+    margin: 0;
+}
+
+/* 10. CONFIDENTIALITÉ : ANCIEN ET NOUVEAU BLOC */
+.form-page #pol,
+.form-page .privacy-card {
+    margin: 24px 0 0;
+    padding: 23px;
+    color: var(--text);
+    background-color: #F0E6DA;
+    border: 1px solid #DECAB8 !important;
+    border-radius: 14px;
+    font-size: 0.94rem;
+    line-height: 1.7;
+}
+
+.form-page #pol h6,
+.form-page .privacy-card h3 {
+    margin: 0 0 10px;
+    color: var(--primary);
+    font-size: 1.06rem;
+    font-weight: 750;
+}
+
+.form-page #pol .lab,
+.form-page .privacy-card label {
+    color: var(--text);
+    font-weight: 500;
+}
+
+.form-page #pol input[type="radio"],
+.form-page #pol input[type="checkbox"],
+.form-page .privacy-card input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+.form-page .privacy-card .form-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding-left: 0;
+}
+
+.form-page .privacy-card .form-check-input {
+    flex: 0 0 auto;
+    float: none;
+    margin: 5px 0 0;
+}
+
+.form-page .privacy-card .form-check-label {
+    margin: 0;
+}
+
+.form-page #oui {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.form-page form a {
+    color: var(--primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.form-page form a:hover {
+    color: var(--primary-hover);
+}
+
+.form-page .form-disclaimer {
+    margin: 18px 0 0;
+    color: var(--text-muted);
+    text-align: center;
+    font-size: 0.83rem;
+    line-height: 1.55;
+}
+
+/* Bouton désactivé */
+
+.form-page .btn-submit:disabled,
+.form-page .btn-submit:disabled:hover {
+    background-color: #B7A8AD;
+    color: #FFFFFF;
+    border: 1px solid #B7A8AD;
+
+    opacity: 0.75;
+    cursor: not-allowed;
+
+    transform: none;
+    box-shadow: none;
+}
+
+/* Bouton activé */
+
+.form-page .btn-submit:not(:disabled) {
+    background-color: #571B30;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* 11. TABLETTES */
+@media (max-width: 991px) {
+    .form-page form,
+    .form-page form.vehicle-form {
+        max-width: 760px;
+        padding: 28px;
+    }
+}
+
+/* 12. TÉLÉPHONES */
+@media (max-width: 576px) {
+    body.form-page {
+        background-attachment: scroll;
+    }
+
+    .form-page main.container,
+    .form-page > .container {
+        padding: 18px 15px 35px;
+    }
+
+    .form-page .form-intro h1 {
+        font-size: 1.9rem;
+    }
+
+    .form-page .form-notice {
+        width: 100%;
+        gap: 12px;
+        margin: 16px auto;
+        padding: 16px;
+    }
+
+    .form-page .form-notice-icon {
+        flex-basis: 38px;
+        width: 38px;
+        height: 38px;
+        font-size: 1.1rem;
+    }
+
+    .form-page .form-notice-content h2 {
+        font-size: 0.95rem;
+    }
+
+    .form-page .form-notice-content p {
+        font-size: 0.84rem;
+    }
+
+    .form-page form,
+    .form-page form.vehicle-form {
+        margin: 14px auto;
+        padding: 22px 18px;
+        border-radius: 16px;
+    }
+
+    .form-page form > .row > div.border {
+        padding: 12px;
+    }
+
+    .form-page fieldset legend {
+        font-size: 1.06rem;
+    }
+
+    .form-page .form-actions {
+        flex-direction: column;
+    }
+
+    .form-page .form-actions button,
+    .form-page form input[type="submit"],
+    .form-page form input[type="reset"] {
+        width: 100%;
+        margin: 6px 0;
+    }
+
+    .form-page #pol,
+    .form-page .privacy-card {
+        padding: 17px;
+    }
+}
+
+/* 13. ACCESSIBILITÉ */
+@media (prefers-reduced-motion: reduce) {
+    .form-page *,
+    .form-page *::before,
+    .form-page *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}

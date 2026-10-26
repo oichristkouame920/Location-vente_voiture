@@ -1,73 +1,537 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="acheter ou louer.css">
-    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">  
-    <title>Louer</title>
-    <link rel="stylesheet" href="asset/css/palette-legacy.css">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Demande de location de véhicule chez OCK Automotive."
+    >
+
+    <title>Location de véhicule | OCK Automotive</title>
+
+    <!-- Bootstrap -->
+    <link
+        rel="stylesheet"
+        href="bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    >
+
+    <!-- Palette de couleurs -->
+    <link
+        rel="stylesheet"
+        href="asset/css/palette-legacy.css"
+    >
+
+    <!-- CSS des formulaires -->
+    <link
+        rel="stylesheet"
+        href="asset/css/formulaire.css"
+    >
+
 </head>
-<body>
-  <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js" ></script>    
-  <marquee behavior="" direction=""><h6>VEULLIEZ REMPLIR CE FORMULAIRE CORRECTEMENT POUR EVITER TOUT DESAGREMMENT</h6></marquee>
-  <div class="container">
-   <form method="POST" action="page achat.php"> <br>
-     <div class="row">
-        <h3 class="border" id="apat">LOCATION</h3>
-        <div class="border rounded-4">
-          <fieldset>
-            <legend>&Aacute; Propos de vous</legend>
-            <label>Nom</label><br>
-            <input type="text" placeholder="DESCHAMPS" class="zone-texte"  autofocus required> <br>
-            <label >Prenoms</label><br>
-            <input type="text" placeholder="Didier" class="zone-texte" required> <br>
-            <label >Adresse email</label><br>
-            <input type="email" placeholder="fgyguhgh uzh@vuhuia.ci" class="zone-texte" required> <br>
-            <label >Contact</label><br>
-            <input type="text" placeholder="+000 xx-xx-xx-xx-xx" class="zone-texte" required> <br>
-            <label >Adresse</label><br>
-            <input type="text" class="zone-texte" placeholder="Pays, ville, quartier" required> <br>
-          </fieldset>
-          <fieldset>
-            <legend>A propos du vehicule</legend>
-            <label>Type de voiture</label><br>
-            <select required>
-              <option > </option>
-              <option>SUV</option>
-              <option>Berline</option>
-              <option>Citadine</option>
-              <option>Tout terrain</option>
-              <option>Caravane</option>
-              <option >Voiture familliale</option>
-              <option>Course</option>
-            </select> <br> 
-            <label for="">Marque </label><br>
-            <select required >
-              <option > </option>
-              <option>Mercedes</option>
-              <option>Ford</option>
-              <option>Jeep</option>
-              <option>Renault</option>
-              <option>Nissan</option>
-              <option >BMW</option>
-            </select> <br>
-            <label for="">Couleur de la voiture</label>  <br>
-            <input type="color" > <br>
-            <label for="">Durée de location</label><br>
-            <input type="text" placeholder="En semaine SVP" class="zone-texte" required><br><br>
-            <input type="reset" class="box-1"> <input type="submit" value="Valider" class="box-1" id="submit">
-          </fieldset>
+
+<body class="form-page">
+
+    <main class="container py-5">
+
+        <!-- ==================================
+             EN-TÊTE
+        =================================== -->
+
+        <header class="form-intro text-center mb-4">
+
+            <span class="form-eyebrow">
+                OCK AUTOMOTIVE
+            </span>
+
+            <h1>
+                Votre prochaine expérience
+                commence ici.
+            </h1>
+
+            <p>
+                Complétez votre demande de location.
+                Nous vous accompagnerons dans
+                le choix de votre véhicule.
+            </p>
+
+        </header>
+
+        <!-- ==================================
+             MESSAGE D'INFORMATION
+        =================================== -->
+
+        <div class="form-notice" role="note">
+
+            <div
+                class="form-notice-icon"
+                aria-hidden="true"
+            >
+                ✓
+            </div>
+
+            <div class="form-notice-content">
+
+                <h2>
+                    Votre demande, notre attention.
+                </h2>
+
+                <p>
+                    Renseignez vos informations avec soin
+                    pour faciliter le traitement
+                    de votre demande.
+                </p>
+
+            </div>
+
         </div>
-      </div> <br>
-    </form>
-    <div class="border border-4" id="pol">
-      <h6 >Politique de Confidentialité</h6>
-      En cliquant sur <span id="oui">"Accepter"</span>, vous accepter de vous soumettre à notre politique de confidentialité <br>
-      <label for="" class="lab">Accepter</label><input type="radio" name="acc" required><br>
-      <label for="" class="lab">Refuser</label><input type="radio" name="acc"><br>
-    </div>
-  </div> <br>
+
+        <!-- ==================================
+             FORMULAIRE
+        =================================== -->
+
+        <form
+            id="location-form"
+            class="vehicle-form"
+            method="post"
+        >
+
+            <div class="form-heading">
+
+                <span class="form-eyebrow">
+                    DEMANDE DE LOCATION
+                </span>
+
+                <h2>
+                    Louer un véhicule
+                </h2>
+
+                <p>
+                    Les champs marqués d'un astérisque (*)
+                    sont obligatoires.
+                </p>
+
+            </div>
+
+            <!-- ==================================
+                 SECTION 1 : COORDONNÉES
+            =================================== -->
+
+            <fieldset class="form-section">
+
+                <legend>
+                    <span class="section-number">01</span>
+                    Vos coordonnées
+                </legend>
+
+                <div class="row g-3">
+
+                    <!-- Nom -->
+
+                    <div class="col-md-6">
+
+                        <label for="nom">
+                            Nom *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nom"
+                            name="nom"
+                            class="form-control zone-texte"
+                            placeholder="Votre nom"
+                            autocomplete="family-name"
+                            required
+                        >
+
+                    </div>
+
+                    <!-- Prénoms -->
+
+                    <div class="col-md-6">
+
+                        <label for="prenoms">
+                            Prénoms *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="prenoms"
+                            name="prenoms"
+                            class="form-control zone-texte"
+                            placeholder="Vos prénoms"
+                            autocomplete="given-name"
+                            required
+                        >
+
+                    </div>
+
+                    <!-- Adresse e-mail -->
+
+                    <div class="col-md-6">
+
+                        <label for="email">
+                            Adresse e-mail *
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="form-control zone-texte"
+                            placeholder="exemple@email.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+                    <!-- Téléphone -->
+
+                    <div class="col-md-6">
+
+                        <label for="telephone">
+                            Téléphone *
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telephone"
+                            name="telephone"
+                            class="form-control zone-texte"
+                            placeholder="+225 07 XX XX XX XX"
+                            autocomplete="tel"
+                            required
+                        >
+
+                    </div>
+
+                    <!-- Pays -->
+
+                    <div class="col-md-6">
+
+                        <label for="pays">
+                            Pays de résidence *
+                        </label>
+
+                        <select
+                            id="pays"
+                            name="pays"
+                            class="form-select"
+                            required
+                        >
+                            <option value="">
+                                Choisir un pays
+                            </option>
+                        </select>
+
+                    </div>
+
+                    <!-- Ville -->
+
+                    <div class="col-md-6">
+
+                        <label for="ville">
+                            Ville *
+                        </label>
+
+                        <select
+                            id="ville"
+                            name="ville"
+                            class="form-select"
+                            required
+                            disabled
+                        >
+                            <option value="">
+                                Choisir d'abord un pays
+                            </option>
+                        </select>
+
+                    </div>
+
+                    <!-- Quartier -->
+
+                    <div class="col-12">
+
+                        <label for="quartier">
+                            Quartier / adresse complémentaire
+                        </label>
+
+                        <input
+                            type="text"
+                            id="quartier"
+                            name="quartier"
+                            class="form-control zone-texte"
+                            placeholder="Ex. Cocody, Riviera 3"
+                            autocomplete="address-line2"
+                        >
+
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+            <!-- ==================================
+                 SECTION 2 : VÉHICULE
+            =================================== -->
+
+            <fieldset class="form-section">
+
+                <legend>
+                    <span class="section-number">02</span>
+                    Votre véhicule
+                </legend>
+
+                <div class="row g-3">
+
+                    <!-- Catégorie -->
+
+                    <div class="col-md-6">
+
+                        <label for="categorie">
+                            Catégorie *
+                        </label>
+
+                        <select
+                            id="categorie"
+                            name="categorie"
+                            class="form-select"
+                            required
+                        >
+
+                            <option
+                                value=""
+                                selected
+                                disabled
+                            >
+                                Choisir une catégorie
+                            </option>
+
+                            <option value="SUV">SUV</option>
+                            <option value="Berline">Berline</option>
+                            <option value="Citadine">Citadine</option>
+                            <option value="Tout terrain">Tout terrain</option>
+                            <option value="Caravane">Caravane</option>
+                            <option value="Familiale">Familiale</option>
+                            <option value="Sport">Sport</option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- Marque -->
+
+                    <div class="col-md-6">
+
+                        <label for="marque">
+                            Marque *
+                        </label>
+
+                        <select
+                            id="marque"
+                            name="marque"
+                            class="form-select"
+                            required
+                        >
+
+                            <option
+                                value=""
+                                selected
+                                disabled
+                            >
+                                Choisir une marque
+                            </option>
+
+                            <option value="Mercedes">Mercedes-Benz</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Jeep">Jeep</option>
+                            <option value="Renault">Renault</option>
+                            <option value="Nissan">Nissan</option>
+                            <option value="BMW">BMW</option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- Date de début -->
+
+                    <div class="col-md-6">
+
+                        <label for="date-debut">
+                            Début de location *
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date-debut"
+                            name="date_debut"
+                            class="form-control zone-texte"
+                            required
+                        >
+
+                    </div>
+
+                    <!-- Date de fin -->
+
+                    <div class="col-md-6">
+
+                        <label for="date-fin">
+                            Fin de location *
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date-fin"
+                            name="date_fin"
+                            class="form-control zone-texte"
+                            aria-describedby="dates-aide"
+                            required
+                        >
+
+                    </div>
+
+                    <!-- Information sur les dates -->
+
+                    <div class="col-12">
+
+                        <p
+                            id="dates-aide"
+                            class="form-text mb-0"
+                        >
+                            La date de fin doit être postérieure
+                            à la date de début.
+                        </p>
+
+                    </div>
+
+                    <!-- Couleur souhaitée -->
+
+                    <div class="col-12">
+
+                        <label for="couleur">
+                            Couleur souhaitée
+                        </label>
+
+                        <input
+                            type="color"
+                            id="couleur"
+                            name="couleur"
+                            value="#571b30"
+                        >
+
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+            <!-- ==================================
+                 CONFIDENTIALITÉ
+            =================================== -->
+
+            <div
+                class="privacy-card"
+                id="pol"
+            >
+
+                <h3>
+                    Confidentialité de vos données
+                </h3>
+
+                <p>
+                    Les informations renseignées seront
+                    utilisées pour traiter votre demande
+                    de location, conformément à notre
+                    politique de confidentialité.
+                </p>
+
+                <div class="form-check">
+
+                    <input
+                        type="checkbox"
+                        id="confidentialite"
+                        name="confidentialite"
+                        value="accepte"
+                        class="form-check-input"
+                        required
+                    >
+
+                    <label
+                        for="confidentialite"
+                        class="form-check-label"
+                    >
+                        Je confirme avoir pris connaissance
+                        des informations relatives à
+                        l'utilisation de mes données. *
+                    </label>
+
+                </div>
+
+            </div>
+
+            <!-- ==================================
+                 BOUTONS
+            =================================== -->
+
+            <div class="form-actions">
+
+                <button
+                    type="reset"
+                    class="btn-reset"
+                >
+                    Réinitialiser
+                </button>
+
+                <button
+                    type="submit"
+                    class="btn-submit"
+                    disabled
+                >
+                    Envoyer ma demande
+                    <span aria-hidden="true">→</span>
+                </button>
+
+            </div>
+
+            <p class="form-disclaimer">
+                Ce formulaire est actuellement une
+                démonstration. Aucune demande
+                n'est encore enregistrée.
+            </p>
+
+        </form>
+
+    </main>
+
+    <!-- ==================================
+         SCRIPTS
+    =================================== -->
+
+    <!-- Bootstrap -->
+    <script
+        src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- Base locale des pays et villes -->
+    <script src="asset/data/localisation.js"></script>
+
+    <!-- Gestion de la localisation -->
+    <script src="asset/js/localisation.js"></script>
+
+    <!-- Validation des dates -->
+    <script src="asset/js/dates-location.js"></script>
+
+    <!-- Validation des conditions -->
+    <script src="asset/js/formulaire.js"></script>
+
 </body>
+
 </html>

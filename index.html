@@ -8,6 +8,7 @@
     <title>Kouame-Auto | Trouvez votre prochaine voiture</title>
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/popup.css">
 </head>
 
 <body>
@@ -124,6 +125,109 @@
                         aria-hidden="true">↗</span></a>
             </div>
         </section>
+
+        
+        <!-- ==========================================
+             POP-UP DE BIENVENUE OCK AUTOMOTIVE
+        ========================================== -->
+
+        <div
+            id="welcome-popup"
+            class="welcome-overlay"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="welcome-title"
+            aria-describedby="welcome-description"
+            hidden
+        >
+
+            <div class="welcome-modal">
+            
+                <!-- Partie visuelle -->
+            
+                <div class="welcome-brand">
+                
+                    <span class="welcome-brand-icon">
+                        OCK
+                    </span>
+                
+                    <h2>
+                        OCK Automotive
+                    </h2>
+                
+                    <p>
+                        L'élégance vous accompagne
+                        à chaque trajet.
+                    </p>
+                
+                    <span class="welcome-brand-line"></span>
+                
+                    <p class="welcome-brand-bottom">
+                        ACHAT & LOCATION DE VÉHICULES
+                    </p>
+                
+                </div>
+            
+                <!-- Partie contenu -->
+            
+                <div class="welcome-content">
+                
+                    <button
+                        type="button"
+                        id="welcome-close"
+                        class="welcome-close"
+                        aria-label="Fermer la fenêtre de bienvenue"
+                    >
+                        &times;
+                    </button>
+                
+                    <span class="welcome-eyebrow">
+                        BIENVENUE CHEZ NOUS
+                    </span>
+                
+                    <h2 id="welcome-title">
+                        Prenez la route
+                        avec nous.
+                    </h2>
+                
+                    <p id="welcome-description">
+                        Découvrez notre univers automobile
+                        et trouvez le véhicule qui
+                        correspond à vos envies.
+                    </p>
+                
+                    <div class="welcome-features">
+                    
+                        <span>Une expérience soignée</span>
+                    
+                        <span>Achat et location</span>
+                    
+                        <span>Un accompagnement personnalisé</span>
+                    
+                    </div>
+                
+                    <a
+                        href="catalogue.html"
+                        class="welcome-action"
+                    >
+                        Découvrir nos véhicules
+                        <span aria-hidden="true">→</span>
+                    </a>
+                
+                    <button
+                        type="button"
+                        id="welcome-continue"
+                        class="welcome-secondary"
+                    >
+                        Continuer vers l'accueil
+                    </button>
+                
+                </div>
+            
+            </div>
+        
+        </div>
+
     </main>
     <footer id="contact">
         <div class="container">
@@ -153,6 +257,7 @@
     </footer>
     <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+    <script src="asset/js/popup.js"></script>
 </body>
 
 </html>
