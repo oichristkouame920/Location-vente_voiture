@@ -1,0 +1,1 @@
+/* Reserve pour les futures requetes a l API PHP. Ne pas utiliser avant developpement backend. */

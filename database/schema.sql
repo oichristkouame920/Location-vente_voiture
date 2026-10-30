@@ -1,0 +1,10 @@
+-- Schema indicatif : adapter et valider avant de le deployer.
+CREATE TABLE IF NOT EXISTS marques (id INT AUTO_INCREMENT PRIMARY KEY, nom VARCHAR(100) NOT NULL UNIQUE);
+CREATE TABLE IF NOT EXISTS categories (id INT AUTO_INCREMENT PRIMARY KEY, slug VARCHAR(60) NOT NULL UNIQUE, nom VARCHAR(100) NOT NULL);
+CREATE TABLE IF NOT EXISTS modeles (id INT AUTO_INCREMENT PRIMARY KEY, marque_id INT NOT NULL, nom VARCHAR(160) NOT NULL, FOREIGN KEY (marque_id) REFERENCES marques(id));
+CREATE TABLE IF NOT EXISTS vehicules (id INT AUTO_INCREMENT PRIMARY KEY, modele_id INT NOT NULL, categorie_id INT NOT NULL, annee SMALLINT NULL, prix_achat DECIMAL(15,2) NULL, tarif_location_jour DECIMAL(15,2) NULL, statut VARCHAR(40) NOT NULL DEFAULT 'a_confirmer', description TEXT NULL, FOREIGN KEY (modele_id) REFERENCES modeles(id), FOREIGN KEY (categorie_id) REFERENCES categories(id));
+CREATE TABLE IF NOT EXISTS vehicule_images (id INT AUTO_INCREMENT PRIMARY KEY, vehicule_id INT NOT NULL, chemin VARCHAR(500) NOT NULL, ordre INT NOT NULL DEFAULT 0, FOREIGN KEY (vehicule_id) REFERENCES vehicules(id));
+CREATE TABLE IF NOT EXISTS demandes_achat (id INT AUTO_INCREMENT PRIMARY KEY, vehicule_id INT NULL, nom VARCHAR(120) NOT NULL, prenoms VARCHAR(150) NOT NULL, email VARCHAR(190) NOT NULL, telephone VARCHAR(40) NOT NULL, date_demande TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (vehicule_id) REFERENCES vehicules(id));
+CREATE TABLE IF NOT EXISTS demandes_location (id INT AUTO_INCREMENT PRIMARY KEY, vehicule_id INT NULL, nom VARCHAR(120) NOT NULL, prenoms VARCHAR(150) NOT NULL, email VARCHAR(190) NOT NULL, telephone VARCHAR(40) NOT NULL, debut DATE NOT NULL, fin DATE NOT NULL, date_demande TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (vehicule_id) REFERENCES vehicules(id));
+CREATE TABLE IF NOT EXISTS messages_contact (id INT AUTO_INCREMENT PRIMARY KEY, nom VARCHAR(160) NOT NULL, email VARCHAR(190) NOT NULL, message TEXT NOT NULL, date_message TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+-- Administration et authentification a concevoir separement avec stockage de hash de mot de passe.

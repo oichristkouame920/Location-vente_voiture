@@ -29,6 +29,8 @@
     box-sizing: border-box;
 }
 
+
+
 body.form-page {
     min-height: 100vh;
     margin: 0;
@@ -623,5 +625,62 @@ body.form-page {
     .form-page *::after {
         animation: none !important;
         transition: none !important;
+    }
+}
+
+/* ============================================================
+   14. LIEN DE RETOUR VERS L'ACCUEIL
+   Utilise sur acheter.html et louer.html avant .form-intro.
+============================================================ */
+.form-page .form-back-container {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto 24px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form-page .form-back-home {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 19px;
+    min-height: 46px;
+    color: var(--primary);
+    background-color: var(--ivory);
+    border: 1px solid var(--beige);
+    border-radius: 11px;
+    font-size: 0.92rem;
+    font-weight: 650;
+    line-height: 1.3;
+    text-decoration: none;
+    box-shadow: 0 5px 18px rgba(35, 15, 24, 0.15);
+    transition: background-color var(--transition),
+                color var(--transition),
+                transform var(--transition),
+                box-shadow var(--transition);
+}
+
+.form-page .form-back-home:hover {
+    color: var(--white);
+    background-color: var(--primary);
+    transform: translateX(-3px);
+    box-shadow: 0 8px 20px rgba(35, 15, 24, 0.22);
+}
+
+.form-page .form-back-home:focus-visible {
+    outline: 3px solid var(--beige);
+    outline-offset: 3px;
+}
+
+@media (max-width: 576px) {
+    .form-page .form-back-container {
+        margin-bottom: 18px;
+    }
+
+    .form-page .form-back-home {
+        padding: 11px 15px;
+        font-size: 0.85rem;
     }
 }

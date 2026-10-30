@@ -1,0 +1,109 @@
+.border
+{
+    background-color: #e9d6bc;
+}
+nav
+{
+    background-color:#571b30;
+    color: white;
+    height: 100px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+marquee
+{
+    font-style: oblique; font-size: 30px;font-weight: 700;
+}
+body
+{
+    background-color: aliceblue;
+}
+.sal /*pour le texte devant les images de couveurture*/
+{
+    margin-top: auto; margin-bottom: auto; font-family: 'Times New Roman', Times, serif; font-size:20px;
+}
+a
+{
+    text-decoration: none;
+}
+.col-mb-4  /*pour les images de couveurture*/
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+} 
+.col-mb-6 /*pour la colone dee texte devant les images de couveurture*/
+{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+} 
+#je1:hover /*pour l'apparence dynamique de l'image 1*/
+{
+   transform: scale(1.1); 
+   transition-duration: 0.5s;
+   
+}
+#je2:hover /*pour l'apparence dynamique de l'image 2*/
+{
+   transform: scale(1.1); 
+   transition-duration: 0.5s;
+}
+#je3:hover /*pour l'apparence dynamique de l'image 3*/
+{
+   transform: scale(1.1); 
+   transition-duration: 0.5s;
+}
+#je4:hover /*pour l'apparence dynamique de l'image 4*/
+{
+   transform: scale(1.1); 
+   transition-duration: 0.5s;
+}
+.nsp    /*Pour les titres dans le copy right*/ 
+{
+    text-decoration:underline;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+footer
+{
+    background-color: #571b30;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size:large;
+}
+footer img
+{
+    width: 35px;
+    height: 35px;
+}
+ul
+{
+    column-gap: 5px;
+}
+.copy-right/*Pour le copy right*/
+{
+    text-align: center;
+    font-size: 20px;
+}
+.logo /*Pour la partie bleu du logo*/
+{
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #571b30; text-transform: uppercase;
+    letter-spacing: 2px;
+    column-gap: 400px;
+}
+.highlight /*Pour la partie orange du logo*/
+{
+    color: #a06474;
+}
+.p /*Pour les titres des elements en carrousel*/
+{
+    color: black; font-size: 25px; font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    font-size: 20px;
+}

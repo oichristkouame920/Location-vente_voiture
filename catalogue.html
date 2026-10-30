@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explorez les catégories et les marques automobiles d'OCK Automotive.">
+    <title>Catalogue automobile | OCK Automotive</title>
+    <link rel="stylesheet" href="asset/css/catalogue.css">
+</head>
+<body class="ock-catalog">
+    <header class="ock-topbar">
+        <a class="ock-logo" href="index.html">OCK AUTOMOTIVE</a>
+        <nav class="ock-nav" aria-label="Navigation principale">
+            <a href="index.html">Accueil</a>
+            <a href="catalogue.html" aria-current="page">Catalogue</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="ock-main">
+        <section class="ock-heading ock-catalogue-hero" aria-labelledby="titre-catalogue">
+            <span class="ock-eyebrow">Notre univers automobile</span>
+            <h1 id="titre-catalogue">Le véhicule qui vous ressemble.</h1>
+            <p class="ock-muted">Explorez nos catégories, découvrez les modèles documentés et parcourez notre répertoire de marques. Retrouvez 30 marques et explorez les différentes catégories. Les fiches existantes et les modèles à documenter sont présentés séparément.</p>
+            <div class="ock-hero-metrics" aria-label="Présentation du catalogue">
+                <div><strong id="nombre-categories">—</strong><span>Catégories documentées</span></div>
+                <div><strong id="nombre-marques">—</strong><span>Marques référencées</span></div>
+                <div><strong id="nombre-vehicules">—</strong><span>Fiches historiques</span></div>
+            </div>
+        </section>
+
+        <section class="ock-catalogue-section" aria-labelledby="titre-marques">
+            <div class="ock-section-heading">
+                <div>
+                    <span class="ock-eyebrow">01 / Nos constructeurs</span>
+                    <h2 id="titre-marques">Nos 30 marques automobiles</h2>
+                    <p class="ock-muted">Parcourez les constructeurs généralistes, américains et de prestige. Les modèles à documenter sont clairement distingués des fiches existantes.</p>
+                </div>
+            </div>
+
+            <div class="ock-brand-controls">
+                <div class="ock-brand-filters" role="group" aria-label="Filtrer les marques par famille">
+                    <button class="ock-filter is-active" type="button" data-gamme="toutes" aria-pressed="true">Toutes</button>
+                    <button class="ock-filter" type="button" data-gamme="generaliste" aria-pressed="false">Généralistes</button>
+                    <button class="ock-filter" type="button" data-gamme="americaine" aria-pressed="false">Américaines</button>
+                    <button class="ock-filter" type="button" data-gamme="prestige" aria-pressed="false">Premium & prestige</button>
+                </div>
+                <div class="ock-brand-search">
+                    <label for="recherche-marque">Rechercher une marque</label>
+                    <input type="search" id="recherche-marque" placeholder="Ex. Toyota, BMW, Ford" autocomplete="off">
+                </div>
+            </div>
+
+            <p id="compteur-marques" class="ock-brand-count" aria-live="polite"></p>
+            <div id="marques" class="ock-brand-grid"></div>
+            <p class="ock-notice">Les marques référencées ne constituent pas un inventaire de véhicules disponibles à la vente ou à la location. Les prix et disponibilités seront indiqués après vérification.</p>
+        </section>
+
+        <section class="ock-catalogue-section" aria-labelledby="titre-categories">
+            <div class="ock-section-heading">
+                <div>
+                    <span class="ock-eyebrow">02 / Explorer</span>
+                    <h2 id="titre-categories">Choisissez votre catégorie</h2>
+                    <p class="ock-muted">Chaque catégorie regroupe plusieurs marques et modèles.</p>
+                </div>
+            </div>
+            <div id="categories" class="ock-grid ock-category-grid"></div>
+        </section>
+
+        <section id="selection-marque" class="ock-catalogue-section" aria-labelledby="titre-selection" hidden>
+            <div class="ock-section-heading">
+                <div>
+                    <span class="ock-eyebrow">03 / Fiches existantes</span>
+                    <h2 id="titre-selection">Véhicules de <span id="nom-marque-selection"></span></h2>
+                    <p class="ock-muted">Sélection issue de nos anciennes pages, à vérifier avant publication commerciale.</p>
+                </div>
+                <button class="ock-filter" id="fermer-selection" type="button">Fermer la sélection</button>
+            </div>
+            <div id="vehicules-marque" class="ock-grid"></div>
+        </section>
+    </main>
+
+    <footer class="ock-footer">OCK Automotive · Achat et location de véhicules</footer>
+
+    <script src="asset/data/vehicules.js"></script>
+    <script src="asset/data/marques.js"></script>
+    <script src="asset/data/modeles-a-documenter.js"></script>
+    <script src="asset/data/miniatures.js"></script>
+    <script src="asset/data/images-marques.js"></script>
+    <script src="asset/data/vehicules-illustratifs.js"></script>
+    <script src="asset/js/catalogue.js"></script>
+</body>
+</html>

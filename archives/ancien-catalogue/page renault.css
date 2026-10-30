@@ -1,0 +1,150 @@
+.border /*pour les elements contenus dans le border*/
+{
+    background-color: #e9d6bc;
+}
+nav /* pour les elements(texte et couleur de fond) du header */
+{
+    background-color: #571b30;
+    color: white;
+    height: 100px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+a /*pour les liens hypertexte*/
+{
+    text-decoration: 0;
+}
+a:hover /*pour donner une apparence dynamique*/
+{
+    transform: scale(1); 
+    color: white; text-decoration:0 ;
+}
+section /*pour creer une sorte de fenetre d'expo*/
+{
+    background: #fff;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 700px 700px 700px ;
+    gap: 40px;
+}
+.img
+{
+    padding: 3px;/*POur separer l'image du bord de la box*/
+    background: rgb(248, 243, 236);
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+#img1 img /*pour l'image mercedes*/
+{ 
+    height: 300px;
+    width: 300px;
+}
+#img1 img:hover
+{
+    transform:scale(1.1);
+    transition-duration: 0.5s;
+}
+#img2 img /*pour l'image jeep*/
+{
+    height: 300px;
+    width: 300px;
+}
+#img2 img:hover
+{
+    transform:scale(1.1);
+    transition-duration: 0.5s;
+}
+#img3 img /*pour l'image bmw*/
+{
+    height: 300px;
+    width: 300px;
+}
+#img3 img:hover
+{
+    transform:scale(1.1);
+    transition-duration: 0.5s;
+}
+#img4 img /*pour l'image renault*/
+{
+    height: 300px;
+    width: 300px;
+}
+#img4 img:hover
+{
+    transform:scale(1.1);
+    transition-duration: 0.5s;
+}
+#img5 img /*pour l'image nissan*/
+{
+    height: 300px;
+    width: 300px;
+}
+#img5 img:hover
+{
+    transform:scale(1.1);
+    transition-duration: 0.5s;
+}
+#img6 img /*pour l'image ford*/
+{
+    height: 300px;
+    width: 300px;
+}
+#img6 img:hover
+{
+    transform:scale(1.1);
+    transition-duration: 0.5s;
+}
+h3 /*pour les titres en dessous des images de marque*/
+{
+    text-align: center;
+}
+
+footer/* pour les elements(texte et couleur de fond du footer  */
+{
+    background-color:  #571b30;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size:large;
+}
+footer img /* pour les logo dans le footer */
+{
+    width: 35px;
+    height: 35px;
+}
+.nsp    /*Pour les tete de liste dans le footerr*/
+{
+   text-decoration:underline;
+   text-transform: uppercase;
+   font-size: 15px;
+}
+ul
+{
+    column-gap:5px;
+}
+.copy-right
+{
+    text-align: center;
+    font-size: 20px;
+}
+.logo
+{
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #571b30; text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.highlight
+{
+    color: #a06474;
+}
+#main
+{
+    margin-top: 10px; padding-top:25spx ;
+}
+#pager /*Pour l'image dans le marquee*/
+{
+   width: 25px; height: 25px;
+}
